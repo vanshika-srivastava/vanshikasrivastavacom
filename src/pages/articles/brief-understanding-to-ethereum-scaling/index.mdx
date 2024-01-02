@@ -1,0 +1,49 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Vanshika Srivastava',
+  date: '2023-08-21',
+  title: 'Brief Understanding to Ethereum Scaling and ‘Optimistic’ Rollups',
+  description:
+    'Team Layer1 or Layer2, you decide in the end of this blog!',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+
+![upscaled](https://images.mirror-media.xyz/publication-images/hPVXzz6ndcgvZb6NWWeyj.png?height=1000&width=2000)
+### Introduction
+
+For the longest time, we have been fighting around Blockchain Trilemma of Decentralization, Security and Scalability. Ethereum no doubt is extremely popular in industry and is the base blockchain. Various L2s operate over Ethereum, allowing the transactions on L2 to ultimately be as secure as L1 transaction. But the question arises, why did we need L2s at first place ?
+Ethereum which is L1 can roughly process less than 20 TPS, now when this demand is high, the network becomes congested, gas fees are sky-rocketing and users HATE, HATE, HATE paying such high gas fees.
+
+![upscaled](https://cdn.geeksandgamers.com/wp-content/uploads/hm_bbpui/295244/0qii5i869k4tcd75aj7yreju9edenls8.jpg)
+
+
+Let’s say I give you a different layer which sits on top of your Layer1 Ethereum, we are going to use this new layer for scaling the transactions without hurting the sentiments of decentralisation and security and reducing the gas fees cost. That’s L2 for you.
+
+## Let’s see how ‘Rollups’ work in scaling ethereum :
+
+![upscaled]()
+
+In the above flow, you can easily see that there are multiple transactions ‘bundled’ in ‘roll-up’. Rolled up transactions get executed on off chain which reduce is overall computation time, speed and cost and making it more easy for dApps to submit the ‘secured’ transaction data, also known as calldata on L1 finally.
+
+There are two different types of Rollups -
+
+- Optimistic Rollups
+
+- ZK-Proof Rollups
+
+We will just discuss Optimistic Rollups in this blog. Optimistic Rollups increases the throughput of Ethereum’s Base Layer by reducing computation on-chain (or onchain).
+
+Now, you must be thinking if transaction is computed offchain, how does one verify the transaction data submitted by L2 to L1 ? Your answer is Fraud Proof. As the term suggests, fraud proofs are nothing but allow verification of transactions. The way Optimistic Rollups work is by being ‘OPTIMISTIC’ because they assume that transactions are valid and there is no proof of validity which goes on-chain.
+
+Let me simplify the process of using a Fraud Proof mechanism. Let’s say that 100 students are giving examination and I have prepared an aggregated score card for all the scores - bundled in a rollup sheet. Now, I would like to take help of a committee to re-verify the performance for publish purpose. The committee has a timeline of a week which you can refer as ‘challenge-period’. The committee will consider my set of results to be valid but at the same time if they suspect a score which looks ‘fraudulent’ they can challenge me, and run a proof against it to check if there are actual discrepancies or not. If my decision remains unchallenged, it passes for final publish and is accepted ‘truthful’.
+
+## My takeaways from Optimistic Rollups :
+
+- Transaction data from the rollups is stored on L1 itself. Sequencers are mostly centralised as of now, although Optimism Foundation is working on decentralised sequencer which would help the economical as well as governance mechanism within the ecosystem.
+
+- Fraud proving mechanism is helpful to chart out the finalities with ‘honesty’ and secures the chain.
+
+- Optimistic rollups are very compatible with Solidity and other EVM chains which is really helpful to smart contract developers to use the existing contracts and map them to rollups or create new dApps.

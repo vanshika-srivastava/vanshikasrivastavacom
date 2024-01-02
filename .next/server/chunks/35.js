@@ -65,34 +65,10 @@ var map = {
 		659,
 		634
 	],
-	"./deep-learning-to-enhance-video-games/images/Screenshot 2024-01-02 at 5.32.12 PM.png": [
-		2350,
-		350
-	],
-	"./deep-learning-to-enhance-video-games/index.mdx": [
-		9955,
+	"./brief-understanding-to-ethereum-scaling/index.mdx": [
+		1461,
 		638,
-		955
-	],
-	"./how-did-I-ended-up-in-Tech/images/blocks.jpg": [
-		4790,
-		790
-	],
-	"./how-did-I-ended-up-in-Tech/images/genisis.png": [
-		4260,
-		260
-	],
-	"./how-did-I-ended-up-in-Tech/images/hashes.jpg": [
-		3324,
-		324
-	],
-	"./how-did-I-ended-up-in-Tech/images/tamper.jpg": [
-		8622,
-		622
-	],
-	"./how-did-I-ended-up-in-Tech/images/valid.jpg": [
-		1131,
-		131
+		461
 	],
 	"./how-did-I-ended-up-in-Tech/index.mdx": [
 		2208,
